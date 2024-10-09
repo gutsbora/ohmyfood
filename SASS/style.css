@@ -39,4 +39,17 @@ ter-color {
   display: flex;
   justify-content: center;
   flex-direction: columns;
+  gap: 17px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.localisation-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
