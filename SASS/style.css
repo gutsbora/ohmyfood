@@ -48,12 +48,6 @@ h1 {
   flex-direction: column;
 }
 
-.localisation-content {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
 localisation-content {
   display: flex;
   flex-direction: column;
