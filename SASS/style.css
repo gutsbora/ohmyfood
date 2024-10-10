@@ -52,4 +52,11 @@ h1 {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+localisation-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
