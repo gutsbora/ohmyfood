@@ -1,4 +1,4 @@
-@mixin image-size($width, $height: $width) {
+@mixin image-size($width, $height) {
 	width: $width;
 	height: $height;
 }

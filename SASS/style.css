@@ -14,7 +14,6 @@ p {
 .main-header {
   display: flex;
   justify-content: center;
-  flex-direction: columns;
   gap: 17px;
 }
 
@@ -25,12 +24,21 @@ p {
 
 .localisation-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  background: color #eaeaea;
+  box-shadow: color(black) 0, 0, 0, 0.1;
+  width: 100%;
+  height: 50px;
+  gap: 17px;
 }
 
 .localisation-content img {
   width: 12px;
   height: 16px;
+}
+
+.localisation-content input {
+  border: none;
 }/*# sourceMappingURL=style.css.map */
