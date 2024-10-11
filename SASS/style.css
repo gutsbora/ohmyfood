@@ -11,30 +11,6 @@ p {
   font-style: normal;
 }
 
-main-color {
-  color: #9356dc;
-}
-
-second-color {
-  color: #ff79da;
-}
-
-ter-color {
-  color: #99e2d0;
-}
-
-main-color {
-  color: #9356dc;
-}
-
-second-color {
-  color: #ff79da;
-}
-
-ter-color {
-  color: #99e2d0;
-}
-
 .main-header {
   display: flex;
   justify-content: center;
@@ -42,15 +18,19 @@ ter-color {
   gap: 17px;
 }
 
-h1 {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+.image-medium {
+  width: 200px;
+  height: 100px;
 }
 
-localisation-content {
+.localisation-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.localisation-content img {
+  width: 12px;
+  height: 16px;
 }/*# sourceMappingURL=style.css.map */
