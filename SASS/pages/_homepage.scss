@@ -1,0 +1,29 @@
+ul {
+	list-style-type: none;
+}
+.fonction {
+	display: flex;
+	flex-direction: column;
+}
+
+.fonction ul {
+	flex-direction: row;
+}
+.fonction .card .number {
+	display: flex;
+	flex-direction: row;
+}
+.fonction .card .number p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 24px;
+	height: 24px;
+	border-radius: 25px, 25px, 25px, 25px;
+	background-color: $main-color;
+}
+
+.fonction .card .number img {
+	width: 13px;
+	height: 16px;
+}
