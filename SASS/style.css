@@ -73,20 +73,20 @@ ul {
 .fonction .card .number {
   display: flex;
   flex-direction: row;
-  border-radius: 25px, 25px, 25px, 25px;
-  background-color: #9356dc;
 }
-
-.fonction .card .number p {
+.fonction .card .number .fonction .card .number p {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 24px;
   height: 24px;
   color: white;
+  border: 2px solid;
+  border-radius: 20px;
+  background-color: #9356dc;
 }
 
 .fonction .card .number img {
   width: 13px;
   height: 16px;
-}/*# sourceMappingURL=style.css.map */
+}

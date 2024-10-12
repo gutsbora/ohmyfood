@@ -12,16 +12,17 @@ ul {
 .fonction .card .number {
 	display: flex;
 	flex-direction: row;
-	border-radius: 25px, 25px, 25px, 25px;
-	background-color: $main-color;
-}
-.fonction .card .number p {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 24px;
-	height: 24px;
-	color: white;
+	.fonction .card .number p {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 24px;
+		height: 24px;
+		color: white;
+		border: 2px solid;
+		border-radius: 20px;
+		background-color: $main-color;
+	}
 }
 
 .fonction .card .number img {
