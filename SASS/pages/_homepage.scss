@@ -12,6 +12,8 @@ ul {
 .fonction .card .number {
 	display: flex;
 	flex-direction: row;
+	border-radius: 25px, 25px, 25px, 25px;
+	background-color: $main-color;
 }
 .fonction .card .number p {
 	display: flex;
@@ -19,8 +21,7 @@ ul {
 	align-items: center;
 	width: 24px;
 	height: 24px;
-	border-radius: 25px, 25px, 25px, 25px;
-	background-color: $main-color;
+	color: white;
 }
 
 .fonction .card .number img {
