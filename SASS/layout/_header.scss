@@ -1,9 +1,12 @@
 .main-header {
 	display: flex;
 	justify-content: center;
+	padding: 10px;
 	gap: 17px;
+	background-color: #ffff;
+	box-shadow: black 2px transparent 15%;
 }
-.image-medium {
-	width: $image-medium;
-	height: $image-small;
+.main-header img {
+	height: 44px;
+	width: 162px;
 }
