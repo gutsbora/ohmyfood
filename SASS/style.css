@@ -11,6 +11,13 @@ p {
   font-style: normal;
 }
 
+h2 {
+  font-family: "roboto", system-ui;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 700;
+}
+
 h3 {
   font-size: 16px;
   font-weight: 500;
@@ -66,6 +73,8 @@ ul {
 .fonction .card .number {
   display: flex;
   flex-direction: row;
+  border-radius: 25px, 25px, 25px, 25px;
+  background-color: #9356dc;
 }
 
 .fonction .card .number p {
@@ -74,8 +83,7 @@ ul {
   align-items: center;
   width: 24px;
   height: 24px;
-  border-radius: 25px, 25px, 25px, 25px;
-  background-color: #9356dc;
+  color: white;
 }
 
 .fonction .card .number img {
