@@ -5,6 +5,12 @@ footer {
 	padding: 22px 25px 22px 25px;
 	gap: 16px;
 }
+.contact {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+}
 .contact img {
 	width: 11px;
 	height: 13px;
