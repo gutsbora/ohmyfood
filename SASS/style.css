@@ -60,6 +60,13 @@ footer {
   height: 13px;
 }
 
+.cards {
+  width: 340px;
+  height: 251px;
+  border: none;
+  border-radius: 15px;
+}
+
 .localisation-content {
   display: flex;
   flex-direction: row;
@@ -108,4 +115,9 @@ ul {
 .fonction .card .number img {
   width: 13px;
   height: 16px;
+}
+
+.cards img {
+  width: 100%;
+  height: 231px;
 }
