@@ -44,8 +44,28 @@ ul {
 	width: 13px;
 	height: 20px;
 }
+.resto {
+	display: flex;
+	flex-direction: column;
+	gap: 17px;
+	padding: 20px;
+	background-color: #f6f6f6;
+}
 
 .cards img {
 	width: 100%;
-	height: 231px;
+	height: 174px;
+	border-radius: 15px 15px 0 0;
+}
+nav {
+	display: flex;
+}
+.cards nav a {
+	flex: 1;
+}
+
+.cards nav img {
+	display: flex;
+	width: 22px;
+	height: 21px;
 }
