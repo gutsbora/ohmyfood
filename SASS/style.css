@@ -50,6 +50,11 @@ a {
   width: 162px;
 }
 
+.fleche {
+  width: 30px;
+  height: 30px;
+}
+
 footer {
   display: flex;
   flex-direction: column;
