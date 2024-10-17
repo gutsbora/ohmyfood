@@ -58,6 +58,11 @@ footer {
   gap: 16px;
 }
 
+footer img {
+  width: 137px;
+  height: 26px;
+}
+
 .contact {
   display: flex;
   flex-direction: row;
@@ -87,6 +92,7 @@ footer {
   border: none;
   border-radius: 15px;
   background-color: white;
+  padding: 0;
 }
 
 button {
@@ -185,16 +191,24 @@ ul {
 
 nav {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .cards nav a {
-  flex: 1;
+  width: 267px;
+  text-decoration: none;
+  margin: 10px 0 0 10px;
 }
 
 .cards nav img {
-  display: flex;
+  align-items: center;
+  margin-top: 15px;
   width: 22px;
   height: 21px;
+}
+
+.cards nav p {
+  margin: 0 0 0 10px;
 }
 
 * {
