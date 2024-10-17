@@ -95,7 +95,7 @@ footer img {
   padding: 0;
 }
 
-button {
+.bouton {
   width: 218px;
   height: 50px;
   border-radius: 25px;
@@ -105,6 +105,7 @@ button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
+  transition: background-color 0.03s;
 }
 
 .localisation-content {
@@ -122,6 +123,10 @@ button {
 .localisation-content img {
   width: 12px;
   height: 16px;
+}
+
+.bouton:hover {
+  background-color: white;
 }
 
 ul {
