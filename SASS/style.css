@@ -105,7 +105,7 @@ footer img {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  transition: background-color 0.03s;
+  transition: background 0.3s, box-shadow 0.3s;
 }
 
 .localisation-content {
@@ -126,7 +126,8 @@ footer img {
 }
 
 .bouton:hover {
-  background-color: white;
+  background: linear-gradient(193.33deg, #ff79da -11.44%, #9356dc 123.93%);
+  box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 ul {
