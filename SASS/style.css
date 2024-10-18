@@ -222,6 +222,11 @@ nav {
   margin: 0 0 0 10px;
 }
 
+header {
+  display: flex;
+  flex-direction: row;
+}
+
 * {
   padding: 0;
   margin: 0;
