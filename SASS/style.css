@@ -152,6 +152,21 @@ footer img {
   align-items: center;
 }
 
+.menu .menu-cards button {
+  width: 59px;
+  height: 69px;
+  position: absolute;
+  right: 5px;
+  background-color: transparent;
+  border: none;
+}
+
+.menu .menu-cards button i {
+  width: 20px;
+  height: 20px;
+  color: transparent;
+}
+
 .localisation-content {
   display: flex;
   flex-direction: row;
@@ -172,6 +187,14 @@ footer img {
 .bouton:hover {
   background: linear-gradient(193.33deg, #ff79da -11.44%, #9356dc 123.93%);
   box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.menu .menu-cards button:hover {
+  width: 59px;
+  height: 69px;
+  position: absolute;
+  right: 5px;
+  background-color: var(#99e2d0);
 }
 
 ul {
@@ -237,6 +260,8 @@ ul {
   width: 100%;
   height: 174px;
   border-radius: 15px 15px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 nav {
@@ -263,6 +288,8 @@ nav {
 
 .img img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .menu {
@@ -277,6 +304,16 @@ nav {
 .menu h1 {
   color: black;
   padding-top: 10px;
+}
+
+.menu-card .menu-cards p {
+  display: flex;
+  align-items: center;
+}
+
+.menu-card .menu-cards span {
+  position: absolute;
+  right: 20px;
 }
 
 * {

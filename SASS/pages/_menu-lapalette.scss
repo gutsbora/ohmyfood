@@ -1,5 +1,6 @@
 .img img {
 	width: 100%;
+	object-fit: cover;
 }
 .menu {
 	display: flex;
@@ -13,4 +14,12 @@
 .menu h1 {
 	color: black;
 	padding-top: 10px;
+}
+.menu-card .menu-cards p {
+	display: flex;
+	align-items: center;
+}
+.menu-card .menu-cards span {
+	position: absolute;
+	right: 20px;
 }

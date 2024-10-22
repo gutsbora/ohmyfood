@@ -6,3 +6,11 @@
 	);
 	box-shadow: 0 0 10px rgba(255, 255, 255, 1);
 }
+
+.menu .menu-cards button:hover {
+	width: 59px;
+	height: 69px;
+	position: absolute;
+	right: 5px;
+	background-color: var($ter-color);
+}
