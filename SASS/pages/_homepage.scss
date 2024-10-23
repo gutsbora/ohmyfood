@@ -69,11 +69,13 @@ nav {
 }
 
 .cards nav img {
+	display: flex;
 	align-items: center;
 	margin-top: 15px;
 	width: 22px;
 	height: 21px;
 }
 .cards nav p {
-	margin: 0 0 0 10px;
+	position: relative;
+	left: 15px;
 }

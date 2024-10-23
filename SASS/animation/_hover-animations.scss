@@ -7,10 +7,30 @@
 	box-shadow: 0 0 10px rgba(255, 255, 255, 1);
 }
 
-.menu .menu-cards button:hover {
+.validated {
+	width: 50px;
+	height: 50px;
+	background-color: #ccc;
+	border-radius: 5px;
+	border: 1px solid #aaa;
+	transition: all 0.3s ease;
+	cursor: pointer;
+
+	color: #000;
+}
+
+// Effet hover
+&:hover {
 	width: 59px;
 	height: 69px;
 	position: absolute;
 	right: 5px;
-	background-color: var($ter-color);
+	background-color: var(--ter-color); // Assure-toi que la variable est définie
+	color: white; // Changer la couleur du texte et de l'icône
+	border: none;
+
+	// Changer la couleur de l'icône au survol
+	i {
+		color: white;
+	}
 }

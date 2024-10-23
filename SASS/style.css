@@ -189,12 +189,12 @@ footer img {
   box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
-.menu .menu-cards button:hover {
-  width: 59px;
-  height: 69px;
-  position: absolute;
-  right: 5px;
-  background-color: var(#99e2d0);
+.menu .menu-cards .validated:hover {
+  width: 59px !important;
+  height: 69px !important;
+  position: absolute !important;
+  right: 5px !important;
+  background-color: var(#99e2d0) !important;
 }
 
 ul {
