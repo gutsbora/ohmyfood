@@ -189,14 +189,6 @@ footer img {
   box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
-.menu .menu-cards .validated:hover {
-  width: 59px !important;
-  height: 69px !important;
-  position: absolute !important;
-  right: 5px !important;
-  background-color: var(#99e2d0) !important;
-}
-
 ul {
   list-style-type: none;
 }
@@ -272,10 +264,11 @@ nav {
 .cards nav a {
   width: 267px;
   text-decoration: none;
-  margin: 10px 0 0 10px;
+  margin: 10px 0 0 20px;
 }
 
 .cards nav img {
+  display: flex;
   align-items: center;
   margin-top: 15px;
   width: 22px;
@@ -283,7 +276,7 @@ nav {
 }
 
 .cards nav p {
-  margin: 0 0 0 10px;
+  margin: 0 0 0 20px;
 }
 
 .img img {
