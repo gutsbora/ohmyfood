@@ -167,6 +167,20 @@ footer img {
   color: transparent;
 }
 
+.boutons {
+  width: 186px;
+  height: 50px;
+  border-radius: 25px;
+  margin-bottom: 40px;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  color: white;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
 .localisation-content {
   display: flex;
   flex-direction: row;
@@ -288,6 +302,8 @@ nav {
 .menu {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 40px;
   width: 100%;
   border-radius: 20px 20px 0 0;
