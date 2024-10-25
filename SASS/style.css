@@ -272,7 +272,8 @@ ul {
 
 nav {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  padding-left: 20px;
 }
 
 .cards nav a {
@@ -281,10 +282,12 @@ nav {
   margin: 10px 0 0 20px;
 }
 
-.cards nav img {
+.cards nav i {
+  position: absolute;
+  right: 85px;
   display: flex;
   align-items: center;
-  margin-top: 15px;
+  padding-top: 25px;
   width: 22px;
   height: 21px;
 }
