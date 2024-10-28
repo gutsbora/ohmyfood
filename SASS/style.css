@@ -1,345 +1,347 @@
 h1 {
-	font-family: "Shrikhand", sans-serif;
-	font-weight: 400;
-	font-style: italic;
-	color: white;
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: white;
 }
 
 p {
-	font-family: "Roboto", sans-serif;
-	font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 h2 {
-	font-family: "roboto", sans-serif;
-	font-size: 24px;
-	font-weight: 700;
+  font-family: "roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 h3 {
-	font-size: 16px;
-	font-weight: 500;
-	font-family: "Roboto", sans-serif;
-	display: inline-block;
-	border-bottom: 3px solid #99e2d0;
-	padding-bottom: 6px;
-	width: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
 }
 
 h4 {
-	font-family: "Roboto", sans-serif;
-	font-size: 16px;
-	font-weight: 500;
-	color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
 }
 
 a {
-	font-family: "roboto", sans-serif;
-	font-size: 18px;
-	font-weight: 700;
-	color: black;
+  font-family: "roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
 }
 
 .header__container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 63px;
-	width: 100%;
-	box-shadow: black 2px transparent 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 63px;
+  width: 100%;
+  box-shadow: black 2px transparent 15%;
 }
 
 .header__img img {
-	height: 44px;
-	width: 162px;
+  height: 44px;
+  width: 162px;
 }
 
 .header__link {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .header__container .header__link .fa-arrow-left {
-	position: absolute;
-	left: 20px;
-	font-size: 20px;
+  position: absolute;
+  left: 20px;
+  font-size: 20px;
 }
 
 footer {
-	display: flex;
-	flex-direction: column;
-	background-color: black;
-	padding: 22px 25px 22px 25px;
-	gap: 16px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 22px 25px 22px 25px;
+  gap: 16px;
 }
 
 footer img {
-	width: 137px;
-	height: 26px;
+  width: 137px;
+  height: 26px;
 }
 
 .contact {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
 
 .contact img {
-	width: 11px;
-	height: 13px;
+  width: 11px;
+  height: 13px;
 }
 
 .card {
-	display: flex;
-	align-items: center;
-	width: 100%;
-	height: 73px;
-	background-color: #f6f6f6;
-	border-radius: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 73px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
 }
 
 .cards {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	height: 251px;
-	border: none;
-	border-radius: 15px;
-	background-color: white;
-	padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 251px;
+  border: none;
+  border-radius: 15px;
+  background-color: white;
+  padding: 0;
 }
 
 .menu-card {
-	display: flex;
-	flex-direction: column;
-	gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .menu-cards {
-	display: flex;
-	flex-direction: column;
-	background-color: white;
-	border-radius: 15px 15px 15px 15px;
-	padding: 15px;
-	gap: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+  padding: 15px;
+  gap: 5px;
 }
 
 .menu-card p {
-	display: flex;
+  display: flex;
 }
 
 .menu-cards span {
-	justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .bouton {
-	width: 218px;
-	height: 50px;
-	border-radius: 25px;
-	background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-	color: white;
-	border: none;
-	font-family: "Roboto", sans-serif;
-	font-weight: 500;
-	font-size: 16px;
-	transition: background 0.3s, box-shadow 0.3s;
+  width: 218px;
+  height: 50px;
+  border-radius: 25px;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  color: white;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  transition: background 0.3s, box-shadow 0.3s;
 }
 
 .back-button {
-	width: 30px;
-	height: 30px;
-	border: none;
-	background-color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu .menu-cards button {
-	width: 59px;
-	height: 69px;
-	position: absolute;
-	right: 5px;
-	background-color: transparent;
-	border: none;
+  width: 59px;
+  height: 69px;
+  position: absolute;
+  right: 5px;
+  background-color: transparent;
+  border: none;
 }
 
 .menu .menu-cards button i {
-	width: 20px;
-	height: 20px;
-	color: transparent;
+  width: 20px;
+  height: 20px;
+  color: transparent;
 }
 
 .boutons {
-	width: 186px;
-	height: 50px;
-	border-radius: 25px;
-	margin-bottom: 40px;
-	background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-	color: white;
-	border: none;
-	font-family: "Roboto", sans-serif;
-	font-weight: 500;
-	font-size: 16px;
-	transition: background 0.3s, box-shadow 0.3s;
+  width: 186px;
+  height: 50px;
+  border-radius: 25px;
+  margin-bottom: 40px;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  color: white;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  transition: background 0.3s, box-shadow 0.3s;
 }
 
 .localisation-content {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	background-color: #eaeaea;
-	width: 100%;
-	height: 50px;
-	gap: 17px;
-	box-shadow: inset 0 4px 5px rgba(168, 170, 168, 0.4),
-		0 4px 5px rgba(153, 153, 153, 0.688);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  width: 100%;
+  height: 50px;
+  gap: 17px;
+  box-shadow: inset 0 4px 5px rgba(168, 170, 168, 0.4), 0 4px 5px rgba(153, 153, 153, 0.688);
 }
 
 .localisation-content img {
-	width: 12px;
-	height: 16px;
+  width: 12px;
+  height: 16px;
 }
 
 .bouton:hover {
-	background: linear-gradient(193.33deg, #ff79da -11.44%, #9356dc 123.93%);
-	box-shadow: 0 0 10px rgb(255, 255, 255);
+  background: linear-gradient(193.33deg, #ff79da -11.44%, #9356dc 123.93%);
+  box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 ul {
-	list-style-type: none;
+  list-style-type: none;
 }
 
 .explorer {
-	padding: 35px 35px;
-	gap: 15px;
-	background-color: #f6f6f6;
-	width: 100%;
-	height: 284px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+  padding: 35px 35px;
+  gap: 15px;
+  background-color: #f6f6f6;
+  width: 100%;
+  height: 284px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .fonction {
-	display: flex;
-	flex-direction: column;
-	padding: 25px;
-	gap: 32px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  gap: 32px;
 }
 
 .card .number {
-	display: flex;
-	flex-direction: row;
-	gap: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .card .number p {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 24px;
-	height: 24px;
-	background-color: #9356dc;
-	color: white;
-	font-weight: 500;
-	font-size: 15px;
-	border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: #9356dc;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 25px;
 }
 
 .card .number img {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 13px;
-	height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 13px;
+  height: 20px;
 }
 
 .resto {
-	display: flex;
-	flex-direction: column;
-	gap: 17px;
-	padding: 20px;
-	background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  padding: 20px;
+  background-color: #f6f6f6;
 }
 
 .cards img {
-	width: 100%;
-	height: 174px;
-	border-radius: 15px 15px 0 0;
-	-o-object-fit: cover;
-	object-fit: cover;
+  width: 100%;
+  height: 174px;
+  border-radius: 15px 15px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 nav {
-	display: flex;
-	flex-direction: column;
-	padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
 }
 
 .cards nav a {
-	width: 267px;
-	text-decoration: none;
-	margin: 10px 0 0 20px;
+  width: 267px;
+  text-decoration: none;
+  margin: 10px 0 0 20px;
 }
 
 .cards nav i {
-	position: absolute;
-	right: 85px;
-	display: flex;
-	align-items: center;
-	padding-top: 25px;
-	width: 22px;
-	height: 21px;
+  position: absolute;
+  right: 85px;
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
+  width: 22px;
+  height: 21px;
 }
 
 .cards nav p {
-	margin: 0 0 0 20px;
+  margin: 0 0 0 20px;
 }
 
 .img img {
-	width: 100%;
-	-o-object-fit: cover;
-	object-fit: cover;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .menu {
-	display: flex;
-	flex-direction: column;
-	gap: 40px;
-	width: 100%;
-	border-radius: 20px 20px 0 0;
-	background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  background-color: #f6f6f6;
 }
 
 .menu .menu__button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu h1 {
-	color: black;
-	padding-top: 10px;
+  color: black;
+  padding-top: 10px;
+}
+
+.menu-card h3 {
+  display: inline-block;
+  border-bottom: 3px solid #99e2d0;
+  padding-bottom: 6px;
+  width: 40px;
 }
 
 .menu-card .menu-cards p {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .menu-card .menu-cards span {
-	position: absolute;
-	right: 20px;
+  position: absolute;
+  right: 20px;
 }
 
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
