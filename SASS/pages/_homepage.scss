@@ -76,7 +76,7 @@ nav {
 }
 .heart-full {
 	display: none;
-	color: red; /* Couleur du cœur lorsqu'il est activé */
+	color: $main-color; /* Couleur du cœur lorsqu'il est activé */
 	transform: scale(0); /* Commence à zéro pour l'animation */
 	transition: transform 0.3s ease, opacity 0.3s ease;
 }

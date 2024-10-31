@@ -3,7 +3,6 @@ h1 {
   font-family: "Shrikhand", sans-serif;
   font-weight: 400;
   font-style: italic;
-  color: white;
 }
 
 p {
@@ -73,6 +72,10 @@ footer {
 footer img {
   width: 137px;
   height: 26px;
+}
+
+footer h1 {
+  color: white;
 }
 
 .contact {
@@ -295,7 +298,7 @@ nav {
 
 .heart-full {
   display: none;
-  color: red; /* Couleur du cœur lorsqu'il est activé */
+  color: #9356dc; /* Couleur du cœur lorsqu'il est activé */
   transform: scale(0); /* Commence à zéro pour l'animation */
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -339,6 +342,7 @@ nav {
 }
 
 .img img {
+  height: 275px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -355,15 +359,63 @@ nav {
   background-color: #f6f6f6;
 }
 
+.name label {
+  cursor: pointer;
+}
+
+.heart-full {
+  display: none;
+  color: #9356dc;
+  transform: scale(0); /* Commence à zéro pour l'animation */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.checkbox {
+  display: none;
+}
+
+/* Afficher et animer le cœur plein avec une latence */
+.checkbox:checked ~ .heart-full {
+  display: inline;
+  transform: scale(1); /* Agrandissement pour simuler le remplissage */
+  opacity: 1;
+}
+
+/* Masquer le cœur vide quand la checkbox est cochée */
+.checkbox:checked ~ .heart-icon {
+  display: none;
+}
+
+/* Ajouter un effet d'animation au cœur lorsqu'il est sélectionné */
+.checkbox:checked ~ .heart-full {
+  animation: heart-fill 0.3s ease;
+}
+
+@keyframes heart-fill {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .menu .menu__button {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.menu h1 {
-  color: black;
+.name {
   padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  align-items: center;
 }
 
 .menu-card h3 {
