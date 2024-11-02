@@ -117,12 +117,14 @@ footer h1 {
 }
 
 .menu-cards {
+  height: 69px;
+  background-color: white;
+  transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
-  background-color: white;
-  border-radius: 15px 15px 15px 15px;
-  padding: 15px;
-  gap: 5px;
+  color: #333;
+  border-radius: 15px;
+  margin-top: 20px;
 }
 
 .menu-card p {
@@ -209,6 +211,34 @@ footer h1 {
 .bouton:hover {
   background: linear-gradient(193.33deg, #ff79da -11.44%, #9356dc 123.93%);
   box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.checked-container {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.checked-container .checkbox {
+  display: none;
+}
+
+.checked-container .checked-icon {
+  display: none;
+  color: #4caf50; /* Couleur de l'icône cochée */
+}
+
+.checked-container .unchecked-icon {
+  color: #ccc; /* Couleur de l'icône décochée */
+}
+
+.checked-container .checkbox:checked ~ .unchecked-icon {
+  display: none;
+}
+
+.checked-container .checkbox:checked ~ .checked-icon {
+  display: inline;
 }
 
 ul {
@@ -363,47 +393,6 @@ nav {
   cursor: pointer;
 }
 
-.heart-full {
-  display: none;
-  color: #9356dc;
-  transform: scale(0); /* Commence à zéro pour l'animation */
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.checkbox {
-  display: none;
-}
-
-/* Afficher et animer le cœur plein avec une latence */
-.checkbox:checked ~ .heart-full {
-  display: inline;
-  transform: scale(1); /* Agrandissement pour simuler le remplissage */
-  opacity: 1;
-}
-
-/* Masquer le cœur vide quand la checkbox est cochée */
-.checkbox:checked ~ .heart-icon {
-  display: none;
-}
-
-/* Ajouter un effet d'animation au cœur lorsqu'il est sélectionné */
-.checkbox:checked ~ .heart-full {
-  animation: heart-fill 0.3s ease;
-}
-
-@keyframes heart-fill {
-  0% {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-  50% {
-    transform: scale(1.2);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 .menu .menu__button {
   display: flex;
   justify-content: center;
@@ -433,6 +422,25 @@ nav {
 .menu-card .menu-cards span {
   position: absolute;
   right: 20px;
+}
+
+.menu-cards .checked-container {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  height: 69px;
+  width: 59px;
+}
+
+.fa-circle-check {
+  display: none;
+}
+
+.fa-circle-check .checked-icon {
+  background-color: #99e2d0;
+  color: #99e2d0;
 }
 
 * {

@@ -1,0 +1,27 @@
+.checked-container {
+	display: inline-flex;
+	align-items: center;
+	cursor: pointer;
+	font-size: 24px;
+}
+
+.checked-container .checkbox {
+	display: none;
+}
+
+.checked-container .checked-icon {
+	display: none;
+	color: #4caf50; /* Couleur de l'icône cochée */
+}
+
+.checked-container .unchecked-icon {
+	color: #ccc; /* Couleur de l'icône décochée */
+}
+
+.checked-container .checkbox:checked ~ .unchecked-icon {
+	display: none;
+}
+
+.checked-container .checkbox:checked ~ .checked-icon {
+	display: inline;
+}

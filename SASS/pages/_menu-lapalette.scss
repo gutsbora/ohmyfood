@@ -16,46 +16,6 @@
 .name label {
 	cursor: pointer;
 }
-.heart-full {
-	display: none;
-	color: $main-color;
-	transform: scale(0); /* Commence à zéro pour l'animation */
-	transition: transform 0.3s ease, opacity 0.3s ease;
-}
-.checkbox {
-	display: none;
-}
-
-/* Afficher et animer le cœur plein avec une latence */
-.checkbox:checked ~ .heart-full {
-	display: inline;
-	transform: scale(1); /* Agrandissement pour simuler le remplissage */
-	opacity: 1;
-}
-
-/* Masquer le cœur vide quand la checkbox est cochée */
-.checkbox:checked ~ .heart-icon {
-	display: none;
-}
-
-/* Ajouter un effet d'animation au cœur lorsqu'il est sélectionné */
-.checkbox:checked ~ .heart-full {
-	animation: heart-fill 0.3s ease;
-}
-
-@keyframes heart-fill {
-	0% {
-		transform: scale(0.5);
-		opacity: 0;
-	}
-	50% {
-		transform: scale(1.2);
-		opacity: 1;
-	}
-	100% {
-		transform: scale(1);
-	}
-}
 .menu .menu__button {
 	display: flex;
 	justify-content: center;
@@ -82,4 +42,20 @@
 .menu-card .menu-cards span {
 	position: absolute;
 	right: 20px;
+}
+.menu-cards .checked-container {
+	display: flex;
+	flex-direction: row;
+	background-color: transparent;
+	position: absolute;
+	right: 0;
+	height: 69px;
+	width: 59px;
+}
+.fa-circle-check {
+	display: none;
+}
+.fa-circle-check .checked-icon {
+	background-color: $ter-color;
+	color: $ter-color;
 }
