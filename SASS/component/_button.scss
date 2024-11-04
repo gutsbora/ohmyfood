@@ -28,14 +28,6 @@
 	align-items: center;
 }
 
-.menu .menu-cards button {
-	width: 59px;
-	height: 69px;
-	position: absolute;
-	right: 5px;
-	background-color: transparent;
-	border: none;
-}
 .menu .menu-cards button i {
 	width: 20px;
 	height: 20px;
@@ -57,4 +49,27 @@
 	font-weight: 500;
 	font-size: 16px;
 	transition: background 0.3s, box-shadow 0.3s;
+}
+.push-button {
+	position: absolute;
+	top: 50%;
+	right: -59px; /* Décalage pour le placer à côté de la carte */
+	transform: translateY(-50%);
+	width: 59px;
+	height: 69px;
+	background-color: #99e2d0;
+	color: #99e2d0;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	opacity: 0;
+	pointer-events: none; /* Rendre le bouton inactif quand invisible */
+	transition: opacity 0.3s ease;
+}
+.push-button i {
+	background-color: white;
+	padding: 8px;
+	border-radius: 50%;
 }

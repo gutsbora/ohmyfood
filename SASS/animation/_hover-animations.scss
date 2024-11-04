@@ -6,3 +6,10 @@
 	);
 	box-shadow: 0 0 10px rgba(255, 255, 255, 1);
 }
+.card:hover {
+	transform: translateX(-59px); /* Décalage de la carte vers la gauche */
+}
+.card:hover .push-button {
+	opacity: 1;
+	pointer-events: auto; /* Active le bouton lorsque visible */
+}
