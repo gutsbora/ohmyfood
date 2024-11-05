@@ -187,10 +187,7 @@ footer h1 {
   top: 50%;
   right: -59px; /* Décalage pour le placer à côté de la carte */
   transform: translateY(-50%);
-  width: 59px;
-  height: 69px;
-  background-color: #99e2d0;
-  color: #99e2d0;
+  background-color: transparent;
   border: none;
   display: flex;
   align-items: center;
@@ -199,6 +196,14 @@ footer h1 {
   opacity: 0;
   pointer-events: none; /* Rendre le bouton inactif quand invisible */
   transition: opacity 0.3s ease;
+}
+
+.push-button:active {
+  width: 59px;
+  height: 69px;
+  background-color: #99e2d0;
+  color: #99e2d0;
+  border-radius: 0 25px 25px 0;
 }
 
 .push-button i {
@@ -284,9 +289,16 @@ ul {
 }
 
 .fonction {
+  pointer-events: none;
   display: flex;
   flex-direction: column;
   padding: 25px;
+  gap: 32px;
+}
+
+.media-card {
+  display: flex;
+  flex-direction: column;
   gap: 32px;
 }
 
@@ -396,6 +408,26 @@ nav {
   margin: 0 0 0 20px;
 }
 
+@media (min-width: 1024px) {
+  .fonction {
+    display: flex;
+    padding: 50px 180px 50px 180px;
+    gap: 25px;
+  }
+  .media-card {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .resto {
+    padding: 0 180px 0 180px;
+    gap: 28px;
+  }
+  .media-resto {
+    display: grid;
+    grid-template-columns: 490px 490px;
+    gap: 100px;
+  }
+}
 .img img {
   height: 275px;
   width: 100%;
@@ -418,17 +450,16 @@ nav {
   cursor: pointer;
 }
 
-.menu .menu__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .name {
-  padding-top: 10px;
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
+  align-items: center;
+}
+
+.menu .menu__button {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -466,6 +497,19 @@ nav {
 .fa-circle-check .checked-icon {
   background-color: #99e2d0;
   color: #99e2d0;
+}
+
+.heart-icon,
+.heart-full {
+  margin-left: 10px; /* Espace entre la checkbox et les icônes */
+}
+
+.checkbox:checked ~ .heart-icon {
+  display: none; /* Cache le cœur vide lorsque la checkbox est cochée */
+}
+
+.checkbox:checked ~ .heart-full {
+  display: inline; /* Affiche le cœur plein lorsque la checkbox est cochée */
 }
 
 * {

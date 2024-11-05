@@ -16,19 +16,18 @@
 .name label {
 	cursor: pointer;
 }
+.name {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 10px;
+	align-items: center;
+}
 .menu .menu__button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.name {
-	padding-top: 10px;
-	display: flex;
-	justify-content: space-between;
-	padding-top: 10px;
-	align-items: center;
-}
 .menu-card h3 {
 	display: inline-block;
 	border-bottom: 3px solid #99e2d0;
@@ -58,4 +57,16 @@
 .fa-circle-check .checked-icon {
 	background-color: $ter-color;
 	color: $ter-color;
+}
+.heart-icon,
+.heart-full {
+	margin-left: 10px; /* Espace entre la checkbox et les icônes */
+}
+
+.checkbox:checked ~ .heart-icon {
+	display: none; /* Cache le cœur vide lorsque la checkbox est cochée */
+}
+
+.checkbox:checked ~ .heart-full {
+	display: inline; /* Affiche le cœur plein lorsque la checkbox est cochée */
 }

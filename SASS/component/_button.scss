@@ -55,10 +55,7 @@
 	top: 50%;
 	right: -59px; /* Décalage pour le placer à côté de la carte */
 	transform: translateY(-50%);
-	width: 59px;
-	height: 69px;
-	background-color: #99e2d0;
-	color: #99e2d0;
+	background-color: transparent;
 	border: none;
 	display: flex;
 	align-items: center;
@@ -67,6 +64,13 @@
 	opacity: 0;
 	pointer-events: none; /* Rendre le bouton inactif quand invisible */
 	transition: opacity 0.3s ease;
+}
+.push-button:active {
+	width: 59px;
+	height: 69px;
+	background-color: #99e2d0;
+	color: #99e2d0;
+	border-radius: 0 25px 25px 0;
 }
 .push-button i {
 	background-color: white;
