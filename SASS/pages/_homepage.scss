@@ -64,6 +64,20 @@ ul {
 	border-radius: 15px 15px 0 0;
 	object-fit: cover;
 }
+.cards .badge {
+	display: flex;
+	background-color: $ter-color;
+	width: 80px;
+	height: 29px;
+	position: relative;
+	left: 357px;
+	border-radius: 2px;
+	margin-bottom: -29px;
+}
+.badge p {
+	display: flex;
+	justify-content: center;
+}
 nav {
 	display: flex;
 	flex-direction: column;
@@ -76,8 +90,8 @@ nav {
 }
 
 .cards nav i {
-	position: absolute;
-	right: 40px;
+	position: relative;
+	left: 443px;
 	cursor: pointer;
 }
 
@@ -137,12 +151,14 @@ nav {
 		justify-content: space-around;
 	}
 	.resto {
-		padding: 0 180px 0 180px;
+		padding: 20px 180px 0 180px;
 		gap: 28px;
 	}
 	.media-resto {
 		display: grid;
 		grid-template-columns: 490px 490px;
+		justify-content: center;
 		gap: 100px;
+		margin-bottom: 20px;
 	}
 }
