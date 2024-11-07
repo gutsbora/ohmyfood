@@ -70,3 +70,17 @@
 .checkbox:checked ~ .heart-full {
 	display: inline; /* Affiche le cœur plein lorsque la checkbox est cochée */
 }
+@media (min-width: 1024px) {
+	.img img {
+		height: 383px;
+	}
+	.menu {
+		width: 1055px;
+		height: 1221px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: -50px;
+		margin-left: 245px;
+	}
+}

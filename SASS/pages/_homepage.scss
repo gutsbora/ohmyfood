@@ -71,12 +71,14 @@ ul {
 	height: 29px;
 	position: relative;
 	left: 357px;
+	top: 13px;
 	border-radius: 2px;
 	margin-bottom: -29px;
 }
 .badge p {
 	display: flex;
 	justify-content: center;
+	padding: 6px;
 }
 nav {
 	display: flex;
@@ -158,7 +160,8 @@ nav {
 		display: grid;
 		grid-template-columns: 490px 490px;
 		justify-content: center;
-		gap: 100px;
+		column-gap: 100px;
+		row-gap: 50px;
 		margin-bottom: 20px;
 	}
 }

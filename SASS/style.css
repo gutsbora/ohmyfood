@@ -352,6 +352,7 @@ ul {
   height: 29px;
   position: relative;
   left: 357px;
+  top: 13px;
   border-radius: 2px;
   margin-bottom: -29px;
 }
@@ -359,6 +360,7 @@ ul {
 .badge p {
   display: flex;
   justify-content: center;
+  padding: 6px;
 }
 
 nav {
@@ -442,7 +444,9 @@ nav {
     display: grid;
     grid-template-columns: 490px 490px;
     justify-content: center;
-    gap: 100px;
+    -moz-column-gap: 100px;
+         column-gap: 100px;
+    row-gap: 50px;
     margin-bottom: 20px;
   }
 }
@@ -530,6 +534,20 @@ nav {
   display: inline; /* Affiche le cœur plein lorsque la checkbox est cochée */
 }
 
+@media (min-width: 1024px) {
+  .img img {
+    height: 383px;
+  }
+  .menu {
+    width: 1055px;
+    height: 1221px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50px;
+    margin-left: 245px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
