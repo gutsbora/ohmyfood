@@ -83,4 +83,17 @@
 		margin-top: -50px;
 		margin-left: 245px;
 	}
+	.menu-card {
+		width: 50%;
+		display: flex;
+		justify-content: center;
+	}
+	.menu-cards {
+		display: flex;
+		justify-content: center;
+	}
+	.menu-cards p span {
+		position: absolute;
+		left: 731px;
+	}
 }
