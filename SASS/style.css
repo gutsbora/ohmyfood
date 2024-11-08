@@ -521,17 +521,34 @@ nav {
   color: #99e2d0;
 }
 
+.heart_container {
+  position: relative;
+  display: inline-block;
+}
+
 .heart-icon,
 .heart-full {
-  margin-left: 10px; /* Espace entre la checkbox et les icônes */
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease; /* Animation douce */
 }
 
-.checkbox:checked ~ .heart-icon {
-  display: none; /* Cache le cœur vide lorsque la checkbox est cochée */
+.heart-icon {
+  opacity: 1;
 }
 
-.checkbox:checked ~ .heart-full {
-  display: inline; /* Affiche le cœur plein lorsque la checkbox est cochée */
+.heart-full {
+  opacity: 0;
+}
+
+/* Lorsqu'on coche la case, on montre l'icône pleine et on cache l'icône vide */
+.checkbox:checked + .heart-icon {
+  opacity: 0;
+}
+
+.checkbox:checked + .heart-full {
+  opacity: 1;
 }
 
 @media (min-width: 1024px) {
@@ -555,10 +572,13 @@ nav {
   .menu-cards {
     display: flex;
     justify-content: center;
+    padding-left: 20px;
   }
   .menu-cards p span {
-    position: absolute;
     left: 731px;
+  }
+  .name label {
+    margin-left: 10px;
   }
 }
 * {
