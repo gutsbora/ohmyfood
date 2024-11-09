@@ -194,7 +194,6 @@ footer h1 {
   justify-content: center;
   cursor: pointer;
   opacity: 0;
-  pointer-events: none; /* Rendre le bouton inactif quand invisible */
   transition: opacity 0.3s ease;
 }
 
@@ -204,6 +203,7 @@ footer h1 {
   background-color: #99e2d0;
   color: #99e2d0;
   border-radius: 0 25px 25px 0;
+  opacity: 1;
 }
 
 .push-button i {
