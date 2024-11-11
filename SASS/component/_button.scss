@@ -51,15 +51,11 @@
 	transition: background 0.3s, box-shadow 0.3s;
 }
 .push-button {
-	position: absolute;
-	top: 50%;
-	right: -59px; /* Décalage pour le placer à côté de la carte */
-	transform: translateY(-50%);
 	background-color: transparent;
 	border: none;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	align-items: end;
+	justify-content: end;
 	cursor: pointer;
 	opacity: 0;
 	transition: opacity 0.3s ease;
@@ -73,6 +69,8 @@
 	opacity: 1;
 }
 .push-button i {
+	display: flex;
+	justify-content: end;
 	background-color: white;
 	padding: 8px;
 	border-radius: 50%;

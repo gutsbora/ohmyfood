@@ -4,3 +4,34 @@
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
+
+.loading-container {
+	text-align: center;
+}
+
+/* Cercle animé */
+.loading-circle {
+	border: 8px solid #ddd;
+	border-top: 8px solid #3498db;
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	animation: spin 1s;
+}
+
+/* Animation de rotation */
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* Texte de chargement */
+.loading-text {
+	margin-top: 15px;
+	color: #555;
+	font-size: 1.2em;
+}
