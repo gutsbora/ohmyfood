@@ -18,9 +18,10 @@
 }
 .name {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	padding-top: 10px;
 	align-items: center;
+	gap: 40px;
 }
 .menu .menu__button {
 	display: flex;
