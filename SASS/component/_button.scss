@@ -61,6 +61,8 @@
 	transition: opacity 0.3s ease;
 }
 .push-button:active {
+	display: flex;
+	align-items: center;
 	width: 59px;
 	height: 69px;
 	background-color: #99e2d0;
