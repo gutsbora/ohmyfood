@@ -30,7 +30,7 @@
 	flex-direction: column;
 	color: #333;
 	border-radius: 15px;
-	margin-top: 20px;
+
 	box-shadow: 0 4.01px 15.04px 0 rgba(0, 0, 0, 0.1019607843);
 	padding: 10px 20px;
 }
@@ -41,4 +41,55 @@
 	justify-content: flex-end;
 }
 @media (min-width: 1024px) {
+}
+.menu-cards {
+	position: relative;
+	width: 100%;
+	padding: 10px 20px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	box-shadow: 0 4.01px 15.04px 0 rgba(0, 0, 0, 0.1019607843);
+	text-align: center;
+}
+
+.price {
+	display: inline-block;
+	transition: transform 0.3s ease; /* Animation du déplacement */
+}
+
+.push-button {
+	display: inline-block;
+	cursor: pointer;
+	padding: 10px;
+	margin-top: 10px;
+	background-color: #007bff;
+	color: white;
+	border-radius: 5px;
+	transition: transform 0.3s ease; /* Animation de la montée */
+	text-align: center;
+}
+
+.checkbox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Styles pour l’effet de clic */
+.toggle-checkbox:checked ~ .price {
+	transform: translateY(-20px); /* Déplace le prix légèrement vers le haut */
+}
+
+.toggle-checkbox:checked ~ .push-button {
+	top: 10px; /* Fait monter le bouton plus haut sur le côté gauche */
+	background-color: $ter-color; /* Change la couleur du bouton au clic */
+}
+
+.toggle-checkbox:checked ~ .push-button .checkbox i {
+	display: inline; /* Affiche l'icône de validation au clic */
+}
+
+/* Masque l'icône par défaut et ne l'affiche qu'au clic */
+.push-button .checkbox i {
+	display: none;
 }

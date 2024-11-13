@@ -40,13 +40,26 @@
 				</div>
 				<div class="menu-card">
 					<h3>Entrées</h3>
-					<div class="menu-cards">
+					<article class="menu-cards">
 						<h2>Fricassé d'escargots</h2>
-						<p>Au piment d'espelette<span>25€</span></p>
-						<div class="push-button">
-							<i class="fa-regular fa-check"></i>
-						</div>
-					</div>
+						<p>Au piment d'espelette <span class="price">25€</span></p>
+
+						<!-- Checkbox cachée pour déclencher l'effet -->
+						<input
+							type="checkbox"
+							id="togglePrice"
+							class="toggle-checkbox"
+							hidden
+						/>
+
+						<!-- Label pour agir comme bouton poussoir -->
+						<label for="togglePrice" class="push-button">
+							<div class="checkbox">
+								<i class="fa-regular fa-check"></i>
+								<!-- Icône de check -->
+							</div>
+						</label>
+					</article>
 					<div class="menu-cards">
 						<h2>Foie gras de canard mi-cuit</h2>
 						<p>Et ses copeaux de truffe noire <span>35€</span></p>
