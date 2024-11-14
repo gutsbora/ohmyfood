@@ -42,17 +42,17 @@
 					<h3>Entrées</h3>
 					<article class="menu-cards">
 						<h2>Fricassé d'escargots</h2>
-						<p>Au piment d'espelette <span class="price">25€</span></p>
-
+						<p>Au piment d'espelette</p>
 						<!-- Checkbox cachée pour déclencher l'effet -->
 						<input
 							type="checkbox"
 							id="togglePrice"
 							class="toggle-checkbox"
-							hidden
+							hidden=""
 						/>
 
 						<!-- Label pour agir comme bouton poussoir -->
+						<span class="price">25€</span>
 						<label for="togglePrice" class="push-button">
 							<div class="checkbox">
 								<i class="fa-regular fa-check"></i>
@@ -60,15 +60,25 @@
 							</div>
 						</label>
 					</article>
-					<div class="menu-cards">
+					<article class="menu-cards">
 						<h2>Foie gras de canard mi-cuit</h2>
-						<p>Et ses copeaux de truffe noire <span>35€</span></p>
-						<label class="checked-container">
-							<input type="checkbox" class="checkbox" />
-							<i class="fa-regular fa-circle-check unchecked-icon"></i>
-							<i class="fa-solid fa-circle-check checked-icon"></i>
+						<p>Et ses copeaux de truffe noire</p>
+						<input
+							type="checkbox"
+							id="togglePrice"
+							class="toggle-checkbox"
+							hidden=""
+						/>
+
+						<!-- Label pour agir comme bouton poussoir -->
+						<span class="price">35€</span>
+						<label for="togglePrice" class="push-button">
+							<div class="checkbox">
+								<i class="fa-regular fa-check"></i>
+								<!-- Icône de check -->
+							</div>
 						</label>
-					</div>
+					</article>
 					<div class="menu-cards">
 						<h2>Œuf au plat</h2>
 						<p>Assaisonné à la truffe sur lit de caviar <span>20€</span></p>

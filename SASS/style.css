@@ -125,7 +125,6 @@ footer h1 {
   color: #333;
   border-radius: 15px;
   box-shadow: 0 4.01px 15.04px 0 rgba(0, 0, 0, 0.1019607843);
-  padding: 10px 20px;
 }
 
 .menu-card p {
@@ -137,26 +136,32 @@ footer h1 {
 }
 
 .menu-cards {
-  position: relative;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
-  padding: 10px 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 4.01px 15.04px 0 rgba(0, 0, 0, 0.1019607843);
-  text-align: center;
+}
+
+.menu-cards h2 {
+  display: inline-block;
 }
 
 .price {
-  display: inline-block;
+  position: absolute;
+  right: 287px;
   transition: transform 0.3s ease; /* Animation du déplacement */
 }
 
 .push-button {
-  display: inline-block;
+  left: 120px;
+  width: 59px;
+  height: 69px;
+  display: block;
+  position: relative;
   cursor: pointer;
-  padding: 10px;
-  margin-top: 10px;
-  background-color: #007bff;
+  background-color: rgba(0, 0, 0, 0);
   color: white;
   border-radius: 5px;
   transition: transform 0.3s ease; /* Animation de la montée */
@@ -171,12 +176,12 @@ footer h1 {
 
 /* Styles pour l’effet de clic */
 .toggle-checkbox:checked ~ .price {
-  transform: translateY(-20px); /* Déplace le prix légèrement vers le haut */
+  transform: translatex(-20px); /* Déplace le prix légèrement vers le haut */
 }
 
 .toggle-checkbox:checked ~ .push-button {
-  top: 10px; /* Fait monter le bouton plus haut sur le côté gauche */
   background-color: #99e2d0; /* Change la couleur du bouton au clic */
+  left: 100px;
 }
 
 .toggle-checkbox:checked ~ .push-button .checkbox i {
@@ -598,12 +603,6 @@ nav {
     display: flex;
     justify-content: center;
     padding-left: 20px;
-  }
-  .menu-cards p span {
-    left: 731px;
-  }
-  .name label {
-    margin-left: 10px;
   }
 }
 * {
