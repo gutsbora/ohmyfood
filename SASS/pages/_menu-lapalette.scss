@@ -41,9 +41,7 @@
 	align-items: center;
 	justify-content: space-between;
 }
-.menu-card .menu-cards span {
-	padding: 0 25px;
-}
+
 .menu-cards .checked-container {
 	display: flex;
 	flex-direction: row;
@@ -109,6 +107,7 @@
 		justify-content: center;
 	}
 	.menu-cards {
+		width: 631px;
 		display: flex;
 		justify-content: center;
 		padding-left: 20px;

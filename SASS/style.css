@@ -149,8 +149,10 @@ footer h1 {
 }
 
 .price {
-  position: absolute;
-  right: 287px;
+  display: grid;
+  place-self: end;
+  position: relative;
+  left: 18px;
   transition: transform 0.3s ease; /* Animation du déplacement */
 }
 
@@ -159,7 +161,6 @@ footer h1 {
   width: 59px;
   height: 69px;
   display: block;
-  position: relative;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
   color: white;
@@ -180,12 +181,25 @@ footer h1 {
 }
 
 .toggle-checkbox:checked ~ .push-button {
+  display: grid;
+  place-self: end;
+  background-color: #99e2d0;
+  left: 18px;
+  justify-content: center;
   background-color: #99e2d0; /* Change la couleur du bouton au clic */
-  left: 100px;
+}
+
+input[type=checkbox]:checked + label .checkbox i {
+  display: inline-block;
+  color: green; /* Vous pouvez personnaliser la couleur */
 }
 
 .toggle-checkbox:checked ~ .push-button .checkbox i {
   display: inline; /* Affiche l'icône de validation au clic */
+}
+
+input[type=checkbox]:checked + label.push-button {
+  background-color: #f0f0f0;
 }
 
 /* Masque l'icône par défaut et ne l'affiche qu'au clic */
@@ -528,10 +542,6 @@ nav {
   justify-content: space-between;
 }
 
-.menu-card .menu-cards span {
-  padding: 0 25px;
-}
-
 .menu-cards .checked-container {
   display: flex;
   flex-direction: row;
@@ -600,6 +610,7 @@ nav {
     justify-content: center;
   }
   .menu-cards {
+    width: 631px;
     display: flex;
     justify-content: center;
     padding-left: 20px;
