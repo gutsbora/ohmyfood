@@ -38,7 +38,7 @@
 .menu-cards span {
 	justify-content: flex-end;
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 768px) {
 	.menu-cards {
 		flex-direction: column;
 		flex-wrap: wrap;
@@ -57,23 +57,24 @@
 		align-self: center;
 	}
 	.price {
+		position: absolute;
+		right: 249px;
+		margin-bottom: 5px;
 		display: flex;
 		align-self: flex-end;
-		position: relative;
-		left: 18px;
+
 		transition: transform 0.3s ease; /* Animation du déplacement */
 	}
 
 	.push-button {
 		position: relative;
-		left: 120px;
+		left: 146px;
 		width: 59px;
 		height: 69px;
-		display: block;
 		cursor: pointer;
 		background-color: #00000000;
 		color: white;
-		border-radius: 5px;
+		border-radius: 0 15px 15px 0;
 		transition: transform 0.3s ease; /* Animation de la montée */
 		text-align: center;
 	}
@@ -90,11 +91,9 @@
 	}
 
 	.toggle-checkbox:checked ~ .push-button {
-		display: grid;
 		place-self: end;
 		background-color: #99e2d0;
 		left: 18px;
-		justify-content: center;
 		background-color: $ter-color; /* Change la couleur du bouton au clic */
 	}
 	input[type="checkbox"]:checked + label .checkbox i {

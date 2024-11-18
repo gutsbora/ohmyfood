@@ -91,7 +91,7 @@
 	opacity: 1;
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 768px) {
 	.img img {
 		height: 383px;
 	}
