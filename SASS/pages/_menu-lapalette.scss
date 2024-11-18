@@ -51,13 +51,7 @@
 	height: 69px;
 	width: 59px;
 }
-.fa-circle-check {
-	display: none;
-}
-.fa-circle-check .checked-icon {
-	background-color: $ter-color;
-	color: $ter-color;
-}
+
 .heart_container {
 	position: relative;
 	display: inline-block;
@@ -87,6 +81,15 @@
 .checkbox:checked + .heart-full {
 	opacity: 1;
 }
+.push-button .checkbox i {
+	display: flex;
+	justify-content: center;
+	color: $ter-color;
+	background-color: white;
+	width: 20px;
+	height: 20px;
+	opacity: 1;
+}
 
 @media (min-width: 1024px) {
 	.img img {
@@ -109,7 +112,8 @@
 	.menu-cards {
 		width: 631px;
 		display: flex;
-		justify-content: center;
+		justify-content: flex-end;
+		align-self: center;
 		padding-left: 20px;
 	}
 }

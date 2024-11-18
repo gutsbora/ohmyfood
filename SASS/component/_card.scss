@@ -39,70 +39,74 @@
 	justify-content: flex-end;
 }
 @media (min-width: 1024px) {
-}
-.menu-cards {
-	flex-direction: column;
-	flex-wrap: wrap;
-	width: 100%;
-	border: 1px solid #ccc;
-	border-radius: 8px;
-	box-shadow: 0 4.01px 15.04px 0 rgba(0, 0, 0, 0.1019607843);
-}
-.menu-cards h2 {
-	display: inline-block;
-}
-.price {
-	display: grid;
-	place-self: end;
-	position: relative;
-	left: 18px;
-	transition: transform 0.3s ease; /* Animation du déplacement */
-}
+	.menu-cards {
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 100%;
+		border: 1px solid #ccc;
+		border-radius: 8px;
+		box-shadow: 0 4.01px 15.04px 0 rgba(0, 0, 0, 0.1019607843);
+	}
+	.menu-cards h2 {
+		padding-bottom: 5px;
+	}
+	.menu-cards p {
+		margin-bottom: 5px;
+	}
+	.menu-cards span {
+		align-self: center;
+	}
+	.price {
+		display: flex;
+		align-self: flex-end;
+		position: relative;
+		left: 18px;
+		transition: transform 0.3s ease; /* Animation du déplacement */
+	}
 
-.push-button {
-	position: relative;
-	left: 120px;
-	width: 59px;
-	height: 69px;
-	display: block;
-	cursor: pointer;
-	background-color: #00000000;
-	color: white;
-	border-radius: 5px;
-	transition: transform 0.3s ease; /* Animation de la montée */
-	text-align: center;
-}
+	.push-button {
+		position: relative;
+		left: 120px;
+		width: 59px;
+		height: 69px;
+		display: block;
+		cursor: pointer;
+		background-color: #00000000;
+		color: white;
+		border-radius: 5px;
+		transition: transform 0.3s ease; /* Animation de la montée */
+		text-align: center;
+	}
 
-.checkbox {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+	.checkbox {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 
-/* Styles pour l’effet de clic */
-.toggle-checkbox:checked ~ .price {
-	transform: translatex(-20px); /* Déplace le prix légèrement vers le haut */
-}
+	/* Styles pour l’effet de clic */
+	.toggle-checkbox:checked ~ .price {
+		transform: translatex(-20px); /* Déplace le prix légèrement vers le haut */
+	}
 
-.toggle-checkbox:checked ~ .push-button {
-	display: grid;
-	place-self: end;
-	background-color: #99e2d0;
-	left: 18px;
-	justify-content: center;
-	background-color: $ter-color; /* Change la couleur du bouton au clic */
-}
-input[type="checkbox"]:checked + label .checkbox i {
-	display: inline-block;
-	color: green; /* Vous pouvez personnaliser la couleur */
-}
-.toggle-checkbox:checked ~ .push-button .checkbox i {
-	display: inline; /* Affiche l'icône de validation au clic */
-}
-input[type="checkbox"]:checked + label.push-button {
-	background-color: #f0f0f0;
-}
-/* Masque l'icône par défaut et ne l'affiche qu'au clic */
-.push-button .checkbox i {
-	display: none;
+	.toggle-checkbox:checked ~ .push-button {
+		display: grid;
+		place-self: end;
+		background-color: #99e2d0;
+		left: 18px;
+		justify-content: center;
+		background-color: $ter-color; /* Change la couleur du bouton au clic */
+	}
+	input[type="checkbox"]:checked + label .checkbox i {
+		display: inline-block;
+		color: green; /* Vous pouvez personnaliser la couleur */
+	}
+
+	input[type="checkbox"]:checked + label.push-button {
+		background-color: #f0f0f0;
+	}
+	/* Masque l'icône par défaut et ne l'affiche qu'au clic */
+	.push-button .checkbox i {
+		display: none;
+	}
 }
