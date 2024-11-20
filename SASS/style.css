@@ -133,6 +133,7 @@ footer h1 {
   position: relative;
   left: 432px;
   bottom: 23px;
+  transition: transform 0.3s ease;
 }
 
 .menu-card p {
@@ -141,6 +142,50 @@ footer h1 {
 
 .menu-cards span {
   justify-content: flex-end;
+}
+
+.toggle-checkbox:checked ~ .price {
+  transform: translatex(-20px); /* Déplace le prix légèrement vers le haut */
+}
+
+.toggle-checkbox:checked ~ .push-button {
+  place-self: end;
+  background-color: #99e2d0;
+  background-color: #99e2d0; /* Change la couleur du bouton au clic */
+}
+
+input[type=checkbox]:checked + label .checkbox i {
+  display: inline-block;
+  color: green; /* Vous pouvez personnaliser la couleur */
+}
+
+input[type=checkbox]:checked + label.push-button {
+  background-color: #f0f0f0;
+}
+
+/* Masque l'icône par défaut et ne l'affiche qu'au clic */
+.push-button .checkbox i {
+  display: none;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.push-button {
+  position: relative;
+  left: 432px;
+  bottom: 23px;
+  width: 59px;
+  height: 69px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border-radius: 0 15px 15px 0;
+  transition: transform 0.3s ease; /* Animation de la montée */
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
