@@ -117,12 +117,22 @@ footer h1 {
 }
 
 .menu-cards {
+  padding: 10px 0 10px 10px;
   height: 69px;
+  display: flex;
+  flex-direction: column;
   background-color: white;
   transition: all 0.3s ease;
   color: #333;
   border-radius: 15px;
   box-shadow: 0 4.01px 15.04px 0 rgba(0, 0, 0, 0.1019607843);
+  gap: 5px;
+}
+
+.price {
+  position: relative;
+  left: 432px;
+  bottom: 23px;
 }
 
 .menu-card p {
