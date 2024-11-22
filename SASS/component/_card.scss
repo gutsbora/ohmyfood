@@ -1,4 +1,4 @@
-.card {
+card {
 	display: flex;
 	align-items: center;
 	width: 100%;
@@ -23,8 +23,6 @@
 	gap: 12px;
 }
 .menu-cards {
-	display: grid;
-	grid-template-columns: 426px;
 	height: 69px;
 	background-color: white;
 	transition: all 0.3s ease;
@@ -35,48 +33,10 @@
 .push-button {
 	display: flex;
 	position: relative;
-	left: 521px;
-	top: -47px;
+	left: 509px;
+	top: -66px;
 	width: 59px;
 	height: 69px;
-	transition: transform 0.3s ease; /* Animation de la montée */
-	text-align: center;
-}
-.price {
-	position: absolute;
-	right: 46px;
-	transition: transform 0.3s ease; /* Animation du déplacement */
-}
-.checkbox1 :active {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.checkbox1::before {
-	display: none;
-}
-.fa-regular .fa-circle-check {
-	background-color: $ter-color;
-}
-.toggle-checkbox:checked ~ .price {
-	transform: translatex(-20px); /* Déplace le prix légèrement vers le haut */
-}
-.toggle-checkbox:checked ~ .push-button {
-	place-self: end;
-	background-color: #99e2d0;
-	background-color: $ter-color; /* Change la couleur du bouton au clic */
-}
-input[type="checkbox"]:checked + label .checkbox i {
-	display: inline-block;
-	color: green; /* Vous pouvez personnaliser la couleur */
-}
-
-input[type="checkbox"]:checked + label.push-button {
-	background-color: #f0f0f0;
-}
-/* Masque l'icône par défaut et ne l'affiche qu'au clic */
-.push-button .checkbox i {
-	display: none;
 }
 .menu-card p {
 	display: flex;
@@ -125,7 +85,7 @@ input[type="checkbox"]:checked + label.push-button {
 		text-align: center;
 	}
 
-	.checkbox1 {
+	.checkbox {
 		display: flex;
 		align-items: center;
 		justify-content: center;
