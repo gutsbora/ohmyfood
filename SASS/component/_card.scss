@@ -1,4 +1,4 @@
-card {
+.card {
 	display: flex;
 	align-items: center;
 	width: 100%;
@@ -29,12 +29,14 @@ card {
 	color: #333;
 	border-radius: 15px;
 	box-shadow: 0 4.01px 15.04px 0 rgba(0, 0, 0, 0.1019607843);
+	padding: 10px;
+	gap: 5px;
 }
 .push-button {
 	display: flex;
 	position: relative;
 	left: 509px;
-	top: -66px;
+	top: -60px;
 	width: 59px;
 	height: 69px;
 }
@@ -43,6 +45,19 @@ card {
 }
 .menu-cards span {
 	justify-content: flex-end;
+}
+.checkbox1 span {
+	position: relative;
+	top: 45px;
+	transition: transform 0.3s ease; /* Animation du déplacement */
+}
+
+.checkbox1 i {
+	height: 20px;
+	width: 20px;
+	position: relative;
+	top: 25px;
+	left: -26px;
 }
 @media screen and (min-width: 768px) {
 	.menu-cards {
@@ -59,17 +74,10 @@ card {
 	.menu-cards p {
 		margin-bottom: 5px;
 	}
-	.menu-cards span {
-		align-self: center;
-	}
-	.price {
-		position: absolute;
-		right: 249px;
-		margin-bottom: 5px;
-		display: flex;
-		align-self: flex-end;
 
-		transition: transform 0.3s ease; /* Animation du déplacement */
+	.checkbox1 {
+		width: 20px;
+		height: 20px;
 	}
 
 	.push-button {
