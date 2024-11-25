@@ -36,6 +36,12 @@ a {
   color: black;
 }
 
+h5 {
+  font-family: "roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 .header__container {
   display: flex;
   justify-content: center;
@@ -125,6 +131,7 @@ footer h1 {
   height: 69px;
   background-color: white;
   gap: 5px;
+  border-radius: 15px;
   box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
