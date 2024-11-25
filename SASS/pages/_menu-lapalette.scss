@@ -4,15 +4,16 @@
 	object-fit: cover;
 }
 .menu {
-	margin-top: -50px;
-	position: relative;
+	top: 268px;
+	position: absolute;
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
 	width: 100%;
 	border-radius: 20px 20px 0 0;
 	background-color: #f6f6f6;
-	padding: 1rem;
+	align-items: center;
+	justify-content: center;
 }
 .name label {
 	cursor: pointer;
@@ -39,16 +40,6 @@
 .menu-card .menu-cards p {
 	display: flex;
 	justify-content: space-between;
-}
-
-.menu-cards .checked-container {
-	display: flex;
-	flex-direction: row;
-	background-color: transparent;
-	position: absolute;
-	right: 0;
-	height: 69px;
-	width: 59px;
 }
 
 .heart_container {
@@ -78,15 +69,6 @@
 }
 
 .checkbox:checked + .heart-full {
-	opacity: 1;
-}
-.push-button .checkbox i {
-	display: flex;
-	justify-content: center;
-	color: $ter-color;
-	background-color: white;
-	width: 20px;
-	height: 20px;
 	opacity: 1;
 }
 
