@@ -67,6 +67,8 @@ footer {
   background-color: black;
   padding: 22px 25px 22px 25px;
   gap: 16px;
+  position: relative;
+  bottom: -1035px;
 }
 
 footer img {
