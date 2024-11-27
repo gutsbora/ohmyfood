@@ -138,6 +138,17 @@ footer h1 {
 .main-title {
   display: flex;
   flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+}
+
+.menu-cards span {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 71px;
+  place-self: end;
+  padding-bottom: 10px;
 }
 
 .box {
@@ -147,14 +158,36 @@ footer h1 {
   width: 0px;
   height: 69px;
   background-color: #99e2d0;
+  position: absolute;
+  left: 372px;
+  border-radius: 0 15px 15px 0;
 }
 
 .menu-cards:hover > .box {
   width: 70px;
 }
 
-.fa-regular .fa-circle-check {
+.menu-cards:hover > .box i {
+  opacity: 1;
+}
+
+.menu-cards:hover > span {
+  transform: translateX(-20px);
+}
+
+.box i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.fa-check {
   color: #99e2d0;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 10px;
 }
 
 .bouton {
