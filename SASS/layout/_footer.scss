@@ -16,7 +16,7 @@ footer {
 }
 .end-page2 {
 	position: absolute;
-	bottom: -625px;
+	bottom: -65%;
 }
 footer img {
 	width: 137px;
@@ -34,4 +34,9 @@ footer h1 {
 .contact img {
 	width: 11px;
 	height: 13px;
+}
+@media screen and (min-width: 768px) {
+	.end-page2 {
+		bottom: -85%;
+	}
 }

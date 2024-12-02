@@ -88,7 +88,7 @@ footer {
 
 .end-page2 {
   position: absolute;
-  bottom: -625px;
+  bottom: -65%;
 }
 
 footer img {
@@ -112,6 +112,11 @@ footer h1 {
   height: 13px;
 }
 
+@media screen and (min-width: 768px) {
+  .end-page2 {
+    bottom: -85%;
+  }
+}
 .card {
   display: flex;
   align-items: center;
@@ -173,7 +178,7 @@ footer h1 {
   height: 69px;
   background-color: #99e2d0;
   position: absolute;
-  left: 429px;
+  left: 85%;
   border-radius: 0 15px 15px 0;
 }
 
@@ -186,7 +191,7 @@ footer h1 {
 }
 
 .menu-cards:hover > span {
-  transform: translateX(-20px);
+  transform: translateX(-45%);
 }
 
 .box i {
@@ -534,11 +539,6 @@ nav {
   width: 40px;
 }
 
-.menu-card .menu-cards p {
-  display: flex;
-  justify-content: space-between;
-}
-
 .heart_container {
   position: relative;
   display: inline-block;
@@ -574,18 +574,21 @@ nav {
     height: 383px;
   }
   .menu {
-    width: 1055px;
+    width: 70%;
     height: 1221px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -50px;
-    margin-left: 245px;
+    margin-top: 139px;
+    margin: 139px 245px 0 245px;
   }
   .menu-card {
-    width: 50%;
     display: flex;
     justify-content: center;
+  }
+  .menu-cards .box {
+    position: absolute;
+    left: 92%;
   }
 }
 * {

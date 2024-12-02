@@ -37,10 +37,6 @@
 	padding-bottom: 6px;
 	width: 40px;
 }
-.menu-card .menu-cards p {
-	display: flex;
-	justify-content: space-between;
-}
 
 .heart_container {
 	position: relative;
@@ -77,17 +73,20 @@
 		height: 383px;
 	}
 	.menu {
-		width: 1055px;
+		width: 70%;
 		height: 1221px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin-top: -50px;
-		margin-left: 245px;
+		margin-top: 139px;
+		margin: 139px 245px 0 245px;
 	}
 	.menu-card {
-		width: 50%;
 		display: flex;
 		justify-content: center;
+	}
+	.menu-cards .box {
+		position: absolute;
+		left: 92%;
 	}
 }
