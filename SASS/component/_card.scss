@@ -55,18 +55,20 @@
 	height: 69px;
 	background-color: $ter-color;
 	position: absolute;
-	left: 85%;
+	right: 40px;
 	border-radius: 0 15px 15px 0;
 }
 .menu-cards:hover > .box {
 	width: 70px;
+	transition: all 0.5s;
 }
 .menu-cards:hover > .box i {
 	opacity: 1;
 }
 .menu-cards:hover > span {
-	transform: translateX(-45%);
+	transform: translateX(-45px);
 }
+
 .box i {
 	display: flex;
 	align-items: center;

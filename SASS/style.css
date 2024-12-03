@@ -116,6 +116,9 @@ footer h1 {
   .end-page2 {
     bottom: -85%;
   }
+  .end-page1 {
+    bottom: -85%;
+  }
 }
 .card {
   display: flex;
@@ -178,12 +181,13 @@ footer h1 {
   height: 69px;
   background-color: #99e2d0;
   position: absolute;
-  left: 85%;
+  right: 40px;
   border-radius: 0 15px 15px 0;
 }
 
 .menu-cards:hover > .box {
   width: 70px;
+  transition: all 0.5s;
 }
 
 .menu-cards:hover > .box i {
@@ -191,7 +195,7 @@ footer h1 {
 }
 
 .menu-cards:hover > span {
-  transform: translateX(-45%);
+  transform: translateX(-45px);
 }
 
 .box i {
@@ -588,7 +592,7 @@ nav {
   }
   .menu-cards .box {
     position: absolute;
-    left: 92%;
+    right: 60px;
   }
 }
 * {
