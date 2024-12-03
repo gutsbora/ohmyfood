@@ -2,4 +2,14 @@
 	width: $width;
 	height: $height;
 }
-@mixin;
+@mixin h2-menu {
+	font-family: "roboto", sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+}
+@mixin h2-index {
+	font-family: "roboto", sans-serif;
+
+	font-size: 24px;
+	font-weight: 700;
+}
