@@ -117,7 +117,7 @@ footer h1 {
     bottom: -85%;
   }
   .end-page1 {
-    bottom: -85%;
+    bottom: -90%;
   }
 }
 .card {
@@ -604,6 +604,8 @@ nav {
 
 .loading-container {
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 /* Cercle animé */
@@ -614,6 +616,7 @@ nav {
   width: 80px;
   height: 80px;
   animation: spin 1s;
+  visibility: hidden;
 }
 
 /* Animation de rotation */
@@ -623,6 +626,7 @@ nav {
   }
   100% {
     transform: rotate(360deg);
+    animation-delay: 0.4s;
   }
 }
 /* Texte de chargement */
@@ -630,4 +634,14 @@ nav {
   margin-top: 15px;
   color: #555;
   font-size: 1.2em;
+}
+
+@keyframes loading-text {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+    visibility: hidden;
+  }
 }
