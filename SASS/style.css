@@ -603,7 +603,6 @@ nav {
 }
 
 .loading-container {
-  text-align: center;
   display: flex;
   justify-content: center;
 }
@@ -616,7 +615,6 @@ nav {
   width: 80px;
   height: 80px;
   animation: spin 1s;
-  animation-delay: 4s;
 }
 
 /* Animation de rotation */
@@ -634,14 +632,4 @@ nav {
   margin-top: 15px;
   color: #555;
   font-size: 1.2em;
-}
-
-@keyframes loading-text {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.5;
-    visibility: hidden;
-  }
 }
