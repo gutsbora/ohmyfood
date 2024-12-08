@@ -605,6 +605,7 @@ nav {
 .loading-container {
   display: flex;
   justify-content: center;
+  animation: fadeOut 3s forwards 5s; /* Animation qui disparaît après 5s */
 }
 
 /* Cercle animé */
@@ -614,7 +615,7 @@ nav {
   border-radius: 50%;
   width: 80px;
   height: 80px;
-  animation: spin 1s;
+  animation: spin 2s;
 }
 
 /* Animation de rotation */
@@ -633,4 +634,25 @@ nav {
   margin-top: 15px;
   color: #555;
   font-size: 1.2em;
+  animation: fadeOutText 3s forwards 5s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/* Animation pour faire disparaître le texte après 5 secondes */
+@keyframes fadeOutText {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
