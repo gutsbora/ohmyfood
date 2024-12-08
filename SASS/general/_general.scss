@@ -8,7 +8,7 @@
 .loading-container {
 	display: flex;
 	justify-content: center;
-	animation: fadeOut 3s forwards 5s; /* Animation qui disparaît après 5s */
+	animation: fadeOut 3s forwards 2s; /* Animation qui disparaît après 5s */
 }
 
 /* Cercle animé */
@@ -39,7 +39,7 @@
 	margin-top: 15px;
 	color: #555;
 	font-size: 1.2em;
-	animation: fadeOutText 3s forwards 5s;
+	animation: fadeOutText 3s forwards 2s;
 }
 @keyframes fadeOut {
 	0% {
