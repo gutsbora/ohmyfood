@@ -620,11 +620,12 @@ nav {
 /* Animation de rotation */
 @keyframes spin {
   0% {
+    opacity: 1;
     transform: rotate(0deg);
   }
   100% {
+    opacity: 0;
     transform: rotate(360deg);
-    animation-delay: 0.4s;
   }
 }
 /* Texte de chargement */
