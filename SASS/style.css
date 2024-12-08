@@ -625,7 +625,6 @@ nav {
   100% {
     transform: rotate(360deg);
     animation-delay: 0.4s;
-    display: none;
   }
 }
 /* Texte de chargement */
