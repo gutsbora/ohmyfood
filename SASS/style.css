@@ -36,12 +36,6 @@ a {
   color: black;
 }
 
-h5 {
-  font-family: "roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-}
-
 .header__container {
   display: flex;
   justify-content: center;
@@ -505,6 +499,23 @@ nav {
      object-fit: cover;
 }
 
+.menu-cards .main-title h2 {
+  font-family: "roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu-cards .main-title h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .menu {
   top: 268px;
   position: absolute;
@@ -536,11 +547,14 @@ nav {
   align-items: center;
 }
 
-.menu-card h3 {
+.menu-card p {
   display: inline-block;
   border-bottom: 3px solid #99e2d0;
   padding-bottom: 6px;
   width: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
 }
 
 .heart_container {
@@ -625,7 +639,6 @@ nav {
     transform: rotate(0deg);
   }
   100% {
-    opacity: 0;
     transform: rotate(360deg);
   }
 }
