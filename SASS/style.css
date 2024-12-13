@@ -142,13 +142,16 @@ footer h1 {
 }
 
 .menu-cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: 75% 5% 20%;
   width: 100%;
   height: 69px;
   background-color: white;
   gap: 5px;
   border-radius: 15px;
   box-shadow: 0 0 10px rgb(255, 255, 255);
+  overflow: hidden;
+  align-items: center;
 }
 
 .main-title {
@@ -161,21 +164,18 @@ footer h1 {
 .menu-cards span {
   display: flex;
   justify-content: center;
-  position: absolute;
-  right: 71px;
-  place-self: end;
-  padding-bottom: 10px;
+  align-items: end;
+  padding-top: 25px;
 }
 
 .box {
   display: flex;
   justify-content: center;
   align-items: center;
+  place-self: center;
   width: 0px;
   height: 69px;
   background-color: #99e2d0;
-  position: absolute;
-  right: 40px;
   border-radius: 0 15px 15px 0;
 }
 
@@ -189,7 +189,11 @@ footer h1 {
 }
 
 .menu-cards:hover > span {
-  transform: translateX(-45px);
+  transform: translateX(-20px);
+}
+
+.menu-cards:hover > .menu-cards h3 {
+  text-overflow: ellipsis;
 }
 
 .box i {
