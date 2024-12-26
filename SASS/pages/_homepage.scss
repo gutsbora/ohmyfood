@@ -69,21 +69,23 @@ ul {
 	border-radius: 15px 15px 0 0;
 	object-fit: cover;
 }
-.cards .badge {
-	display: flex;
+
+.badge {
+	position: absolute;
+	right: 30px;
+	top: 10px;
 	background-color: $ter-color;
+
 	width: 80px;
 	height: 29px;
-	position: relative;
-	left: 357px;
-	top: 13px;
 	border-radius: 2px;
-	margin-bottom: -29px;
 }
 .badge p {
 	display: flex;
 	justify-content: center;
 	padding: 6px;
+	font-weight: 500;
+	font-size: 14px;
 }
 nav {
 	display: flex;

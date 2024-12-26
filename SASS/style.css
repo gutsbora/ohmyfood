@@ -136,6 +136,7 @@ footer h1 {
   border-radius: 15px;
   background-color: white;
   padding: 0;
+  position: relative;
 }
 
 .menu-card {
@@ -416,22 +417,22 @@ ul {
      object-fit: cover;
 }
 
-.cards .badge {
-  display: flex;
+.badge {
+  position: absolute;
+  right: 30px;
+  top: 10px;
   background-color: #99e2d0;
   width: 80px;
   height: 29px;
-  position: relative;
-  left: 357px;
-  top: 13px;
   border-radius: 2px;
-  margin-bottom: -29px;
 }
 
 .badge p {
   display: flex;
   justify-content: center;
   padding: 6px;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 nav {
@@ -636,9 +637,24 @@ nav {
   scroll-behavior: smooth;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .loading-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1000;
   animation: fadeOut 3s forwards 2s; /* Animation qui disparaît après 5s */
 }
 
