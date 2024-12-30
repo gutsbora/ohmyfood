@@ -195,6 +195,7 @@ footer h1 {
 
 .menu-cards:hover > span {
   transform: translateX(-36px);
+  transition: ease-out 0.4s;
 }
 
 .menu-cards:hover > .menu-cards h3 {
