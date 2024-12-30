@@ -356,6 +356,8 @@ footer h1 {
   background: linear-gradient(135deg, #d9d9d9, #ffffff, #b3b3b3, #e6e6e6);
   animation: lift 4s ease-in-out forwards;
   transform-origin: center bottom;
+  position: absolute;
+  top: 250px;
 }
 
 .hidden-text {
