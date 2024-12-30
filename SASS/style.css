@@ -309,6 +309,84 @@ footer h1 {
   pointer-events: auto; /* Active le bouton lorsque visible */
 }
 
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1000;
+  animation: fadeOut 6s forwards 7s; /* Animation qui disparaît après 5s */
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/* Assiette */
+.plate {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  height: 20px;
+  background: white;
+  border-radius: 50% 50% 50% 50%;
+  z-index: 1000;
+}
+
+/* Cloche */
+.cloche {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  height: 250px;
+  border-radius: 50% 50% 0 0;
+  z-index: 1000;
+  background: linear-gradient(135deg, #d9d9d9, #ffffff, #b3b3b3, #e6e6e6);
+  animation: lift 4s ease-in-out forwards;
+  transform-origin: center bottom;
+}
+
+.hidden-text {
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  opacity: 0; /* Texte caché initialement */
+  animation: text-fade 5s ease-in-out forwards; /* Transition douce pour l'apparition */
+}
+
+/* Animation */
+@keyframes lift {
+  0%, 90% {
+    transform: translateY(0); /* Cloche reste en place */
+  }
+  100% {
+    transform: translateY(-70px); /* Cloche se soulève */
+  }
+}
+@keyframes text-fade {
+  0%, 90% {
+    z-index: 0;
+    opacity: 0;
+  }
+  100% {
+    z-index: 1;
+    opacity: 1; /* Texte visible au survol */
+  }
+}
 .checked-container {
   display: inline-flex;
   align-items: center;
@@ -641,67 +719,4 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.loading-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  background-color: black;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  position: fixed;
-  z-index: 1000;
-  animation: fadeOut 3s forwards 2s; /* Animation qui disparaît après 5s */
-}
-
-/* Cercle animé */
-.loading-circle {
-  border: 8px solid #ddd;
-  border-top: 8px solid #3498db;
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  animation: spin 2s;
-}
-
-/* Animation de rotation */
-@keyframes spin {
-  0% {
-    opacity: 1;
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-/* Texte de chargement */
-.loading-text {
-  margin-top: 15px;
-  color: #555;
-  font-size: 1.2em;
-  animation: fadeOutText 3s forwards 2s;
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-/* Animation pour faire disparaître le texte après 5 secondes */
-@keyframes fadeOutText {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
 }
