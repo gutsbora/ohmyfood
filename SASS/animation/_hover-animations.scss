@@ -92,3 +92,22 @@
 		opacity: 1; /* Texte visible au survol */
 	}
 }
+.menu-cards {
+	opacity: 0;
+	transform: translateX(100px);
+	animation: slideIn 0.8s forwards;
+	margin: 40px 0;
+	background: lightgray;
+	padding: 20px;
+	border-radius: 8px;
+}
+@keyframes slideIn {
+	0% {
+		opacity: 0;
+		transform: translateX(100px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
