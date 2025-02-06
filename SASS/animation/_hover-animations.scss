@@ -92,21 +92,31 @@
 		opacity: 1; /* Texte visible au survol */
 	}
 }
-.menu-cards {
-	opacity: 0;
-	transform: translateX(100px);
-	animation: slideIn 0.8s forwards;
-	margin: 40px 0;
-	background: lightgray;
-	padding: 20px;
-	border-radius: 8px;
+.menu {
+	display: flex;
+	overflow: hidden;
 }
+.menu-card {
+	opacity: 0;
+	transform: translate(100%);
+	animation: slideIn 0.5s ease-out forwards;
+}
+.menu-card:nth-child(1) {
+	animation-delay: 0.2s;
+}
+.menu-card:nth-child(2) {
+	animation-delay: 0.4s;
+}
+.menu-card:nth-child(3) {
+	animation-delay: 0.6s;
+}
+
 @keyframes slideIn {
-	0% {
+	from {
 		opacity: 0;
-		transform: translateX(100px);
+		transform: translateX(100%);
 	}
-	100% {
+	to {
 		opacity: 1;
 		transform: translateX(0);
 	}
