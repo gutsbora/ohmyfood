@@ -42,7 +42,7 @@ a {
   align-items: center;
   height: 63px;
   width: 100%;
-  box-shadow: black 2px transparent 15%;
+  box-shadow: black 2px;
 }
 
 .header__img img {
